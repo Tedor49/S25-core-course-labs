@@ -34,7 +34,8 @@ jobs:
     - name: Test with pytest
       run: |
         pytest test.py --cov=app
-docker:
+        
+  docker:
     runs-on: ubuntu-latest
     steps:
       - name: Login to Docker Hub
